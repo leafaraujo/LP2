@@ -1,16 +1,19 @@
 import java.text.DecimalFormat;
+import java.util.Scanner;
 
-  
+
 public class Main {
-  
+
   public static void main(String[] args){
-    final double RADIUS = 2.6;
-    final double HEIGHT = 22.1;
-    final double PI = 3.14159;
+    Scanner input = new Scanner(System.in);
+    System.out.println("Digite o valor de raio e altura da sua lata: ");
+    double radius = input.nextDouble();
+    double height = input.nextDouble();
+    final double PI = 3.14;
     DecimalFormat deci = new DecimalFormat("0.000");
-    double bulk = PI * (RADIUS * RADIUS) * HEIGHT;
-    System.out.println("RADIUS: " + RADIUS);
-    System.out.println("HEIGHT: " + HEIGHT);
+    double bulk = PI * (radius * radius) * height;
+    System.out.println("RADIUS: " + radius);
+    System.out.println("HEIGHT: " + height);
     System.out.println("VOLUME: " + deci.format(bulk));
     }
   }
