@@ -25,7 +25,7 @@ public class Book{
     return this.bookID;
   }
 
-  borrowABook(String userID){
+  public void borrowABook(String userID){
     if(this.isAvailable){
       isAvailable = false;
       this.userID = userID;
@@ -35,7 +35,7 @@ public class Book{
     }
   }
 
-  returnABook(){
+  public void returnABook(){
     if(!this.isAvailable){
       isAvailable = true;
     }
