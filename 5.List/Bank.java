@@ -1,4 +1,6 @@
-  public class Main{
+import java.util.Scanner;
+
+public class Main{
 
         public static void main(String[] args) {
           Customer bankCustomers [] = new Customer[10];
@@ -178,6 +180,8 @@
               funds = 0;
             }
           }
+        }
+}
 
           public void addMoney(float value){
             funds += value;
