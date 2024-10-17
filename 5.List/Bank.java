@@ -114,6 +114,8 @@ public class Main{
               case 5: 
                 keepGoin = false;
                 break;
+                default:
+                System.out.println("Essa opção é inválida");
             }
           }
         }
