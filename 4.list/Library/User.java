@@ -20,7 +20,7 @@ public class User{
     this.userPhone = phone;
   }
 
-  public takeABook(Book book){
+  public void takeABook(Book book){
     if(this.userQuantityOfBooks < 3){
       this.userBooks[this.userQuantityOfBooks] = book;
       userQuantityOfBooks ++;
@@ -33,7 +33,7 @@ public class User{
     }
   }
 
-  public returnABook(Book book){
+  public void returnABook(Book book){
     for(int i = 0; i < 3; i++){
       if(this.userBooks[i].getID() == book.getID()){
         this.userBooks[i] = null;
