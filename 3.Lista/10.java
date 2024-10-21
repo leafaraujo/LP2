@@ -44,16 +44,12 @@ public class Main{
 
         else if(j == -1){
           System.out.print("|");
-        }
-        else if(i == (line - 1) || j == (collum - 1)){
-          System.out.printf(" " + chess[i][j] + " ");
-        }
+          }
         else{
-        System.out.printf(" " + chess[i][j] + " ");
+          System.out.printf(" " + chess[i][j] + " ");
         }
       }
       System.out.println(" ");
-  }
-  
+    }
   }
 }
