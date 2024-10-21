@@ -21,14 +21,6 @@ import java.util.Scanner;
   public static void main(String[] args){
     Scanner input = new Scanner(System.in);
     
-    char xadrez [][] = new char [8][8];
-
-    for(int i =0; i < 8; i++){
-      for(int j = 0; j < 8; j++){
-        xadrez[i][j] = '-';
-      }
-    }
-    //System.out.print("Digite a linha em que a torre se encontra: ");
     int numberOne = (int) (Math.random() * 10);
     int numberTwo = (int) (Math.random() * 10);
     int result = 0, userInput = 0;
