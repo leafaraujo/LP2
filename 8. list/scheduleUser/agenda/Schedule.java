@@ -10,26 +10,32 @@ public class Schedule{
     // Construtor vazio, começa sem elementos
     public Schedule() {}
 
-    public void addUser(User usuário){
+    public void addUser(User usuario){
+        int value = usuários.size();
+        if(value == 0){
+            this.usuários.add(usuario);
+        }
+        else{
         User auxiliar, auxiliar2;
         int counter;
         for(int i = 0; i < this.usuários.size(); i++){
-            if(comparator.compare(usuário.getTaxID(), usuários.get(i).getTaxID()) == 0){
+            if(comparator.compare(usuario.getTaxID(), usuários.get(i).getTaxID()) == 0){
                 System.out.println("Esse usuário já está cadastrado em nosso banco de dados!");
             }
-            else if(comparator.compare(usuário.getTaxID(), usuários.get(i).getTaxID()) > 0){
+            else if(comparator.compare(usuario.getTaxID(), usuários.get(i).getTaxID()) > 0){
                 continue;
             }
-            else if(comparator.compare(usuário.getTaxID(), usuários.get(i).getTaxID()) < 0){
+            else if(comparator.compare(usuario.getTaxID(), usuários.get(i).getTaxID()) < 0){
                 auxiliar = usuários.get(i);
-                usuários.set(i, usuário);
+                usuários.set(i, usuario);
                 for(counter = i + 1; counter < usuários.size(); counter ++){
                     auxiliar2 = usuários.get(counter);
                     usuários.set(counter, auxiliar);
                     auxiliar = auxiliar2;
                 }
             }
-        }
+        } 
+    }
     }
 
     public void removeUser(String taxID){
