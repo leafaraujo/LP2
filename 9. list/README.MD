@@ -20,7 +20,7 @@ mantenha um vetor com subitens de orçamento que podem ser da classe ItemOrcamen
 implementa os seguintes métodos:
 
 Método | O que faz
-------------------
+-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Construtor | Além dos parâmetros da superclasse, recebe como parâmetro o vetor com os subitens ordenados
 getValor | Sobrescreve o método da Superclasse, retornando a soma de valores de todos os subitens de orçamento
 encontraItem | Recebe como parâmetro o histórico de um subitem (String) e retorna o objeto correspondente ao subitem que possui este histórico, se existir. Caso contrário, retorna 'null'
