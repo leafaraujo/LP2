@@ -20,6 +20,5 @@ public class Three {
         System.out.println("Seu valor: " + achou.getValor());
         System.out.println("------------------------------------------");
         historicoComplexo.showBudget();
-        System.out.println("------------------------------------------");
     }
 }
